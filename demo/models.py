@@ -8,3 +8,4 @@ class Book(models.Model):
 
     price = models.DecimalField(default=0, max_digits=6, decimal_places=2)
 
+    published = models.DateField()
