@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="597f47c7-2926-4d4f-9201-661e2ea5834b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo/views.py" afterDir="false" />
     </list>
@@ -80,9 +79,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="458" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1605699935547" />
-    <state x="609" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1605690021185">
+    <state x="608" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1605786051138">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="609" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1605690021185" />
+    <state x="608" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1605786051138" />
   </component>
 </project>
