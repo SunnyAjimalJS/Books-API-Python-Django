@@ -8,10 +8,10 @@ class Another(View):
 
     books = Book.objects.all()
 
-    output = f"We have {len(books)} that many books in DB"
+    output = f"We have {len(books)} books in DB"
 
     def get(self, request):
-        return HttpResponse('This is another function inside a class')
+        return HttpResponse(self.output)
 
 
 def first(request):
