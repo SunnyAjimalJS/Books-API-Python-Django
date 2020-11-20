@@ -7,8 +7,11 @@ from .models import Book
 class Another(View):
 
     books = Book.objects.all()
+    output = ''
 
-    output = f"We have {len(books)} books in DB"
+    for book in books:
+
+        output += f"We have {book.title} book in DB\n"
 
     def get(self, request):
         return HttpResponse(self.output)
