@@ -11,7 +11,7 @@ class Another(View):
 
     for book in books:
 
-        output += f"We have {book.title} book in DB\n"
+        output += f"We have {book.title} book with ID {book.id}<br>"
 
     def get(self, request):
         return HttpResponse(self.output)
