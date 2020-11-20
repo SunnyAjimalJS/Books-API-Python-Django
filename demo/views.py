@@ -6,15 +6,16 @@ from .models import Book
 
 class Another(View):
 
-    books = Book.objects.filter(is_published=True)
+    books = Book.objects.get(id=2)
     output = ''
+    get_method_output = f"We have {books.title} book with ID {books.id}<br>"
 
-    for book in books:
+    #for book in books:
 
-        output += f"We have {book.title} book with ID {book.id}<br>"
+        #output += f"We have {book.title} book with ID {book.id}<br>"
 
     def get(self, request):
-        return HttpResponse(self.output)
+        return HttpResponse(self.get_method_output)
 
 
 def first(request):
