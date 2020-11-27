@@ -7,7 +7,7 @@ from .models import Book
 def first(request):
     book = Book.objects.all()
 
-    return render(request, 'first_temp.html', {'data': 'This is data from views'})
+    return render(request, 'first_temp.html', {'books': book})
 
 # class Another(View):
 #
