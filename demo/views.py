@@ -5,7 +5,7 @@ from .models import Book
 # Create your views here.
 
 def first(request):
-    return render(request, 'first_temp.html')
+    return render(request, 'first_temp.html', {'data': 'This is data from views'})
 
 # class Another(View):
 #
