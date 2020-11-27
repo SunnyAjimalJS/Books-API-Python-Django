@@ -5,5 +5,6 @@ from .models import Book
 class BookAdmin(admin.ModelAdmin):
     list_display = ['title', 'description']
     list_filter = ['published']
+    search_fields = ['title']
 
 
