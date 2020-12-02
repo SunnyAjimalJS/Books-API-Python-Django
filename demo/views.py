@@ -1,28 +1,12 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.views import View
-from .models import Book
 from rest_framework import viewsets
-# Create your views here.
-
-def first(request):
-    book = Book.objects.all()
-
-    return render(request, 'first_temp.html', {'books': book})
+from .serializers import BookSerializer
+from .models import Book
 
 class BookViewSet(viewsets.ModelViewSet):
+    serializer_class = BookSerializer
+    queryset = Book.objects.all()
 
-# class Another(View):
-#
-#     books = Book.objects.get(id=1)
-#     output = ''
-#     get_method_output = f"We have {books.title} book with ID {books.id}<br>"
-#
-#     for book in books:
-#         output += f"We have {book.title} book with ID {book.id}<br>"
-#
-#     def get(self, request):
-#         return HttpResponse(self.get_method_output)
+
 
 
 
