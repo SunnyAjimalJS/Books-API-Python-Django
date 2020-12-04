@@ -1,5 +1,8 @@
 from django.db import models
 
+class BookNumber(models.Model):
+    isbn_10 = models.CharField(max_length=10, blank=True)
+    isbn_13 = models.CharField(max_length=13, blank=True)
 
 class Book(models.Model):
     title = models.CharField(blank=False, unique=True, max_length=36)
@@ -17,6 +20,3 @@ class Book(models.Model):
     def __str__(self):
         return self.title
 
-class BookNumber(models.Model):
-    isbn_10 = models.CharField(max_length=10, blank=True)
-    isbn_13 = models.CharField(max_length=13, blank=True)
